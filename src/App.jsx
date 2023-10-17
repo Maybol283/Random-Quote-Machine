@@ -1,13 +1,11 @@
-import { useState } from 'react'
 import './App.css'
-import 'boostrap/dist/css/boostrap.min.css'
-import QuoteBoard from './Components/Quote Board'
+import QuoteBoard from './Components/QuoteBoard/QuoteBoard'
 
 function App() {
   return (
-    <div>
-<QuoteBoard/>
-    </div>
+    <div className="d-flex align-items-center justify-content-center" style={{ minHeight: "75vh" }}>
+      <QuoteBoard />
+      </div>
   )
 }
 
