@@ -4,31 +4,30 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
 
 function QuoteBoard() {
     return (
-      <Card style={{ width: '50rem', height: '25rem' }}>
-        <Card.Body>
-          <Card.Text className="p-5 h1">
+      <Card className="p-0 pt-5"style={{ width: '50vw', height: '50vh' }}>
+        <Card.Body  >
+          <Card.Text className="pb-3"style={{fontSize: "2.5vw"}}>
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </Card.Text>
-            <Row>
-              <Col >
+          <Container>
           <footer className="blockquote-footer">Someone famous</footer>
-             </Col>
-             </Row>
-             <Row>
-             <Col className="d-flex justify-content-start">
-             <i class="fa-brands fa-square-instagram fa-2xl mx-2"></i>
+             <Row className="mt-sm-5 mt-lg-3 mt-5">
+             <Col className="d-flex justify-content-start align-items-center">
+             <i class="fa-brands fa-square-instagram fa-2xl me-2"></i>
              <i class="fa-brands fa-square-x-twitter fa-2xl mx-2"></i>
-             <i class="fa-brands fa-tumblr fa-2xl mx-2"></i>
+             <i class="fa-brands fa-tumblr fa-lg fa-lg-2xl mx-2"></i>
              <i class="fa-brands fa-square-reddit fa-2xl mx-2"></i>
              </Col>
-              <Col>
-          <Button variant="dark" className="justify-content-right">Next</Button>
+              <Col className="d-flex justify-content-end">
+          <Button variant="dark">Next</Button>
              </Col>
           </Row>
+          </Container>
         </Card.Body>
       </Card>
     );
