@@ -60,10 +60,10 @@ class QuoteBoard extends Component {
             <footer className="blockquote-footer ">{quoteMessage.author}</footer>
             <Row className="mt-sm-5 mt-lg-3 mt-5 ">
               <Col className="d-flex justify-content-start align-items-center">
-                <i className="fa-brands fa-square-instagram fa-2xl me-2"></i>
-                <i className="fa-brands fa-square-x-twitter fa-2xl mx-2"></i>
-                <i className="fa-brands fa-tumblr fa-lg fa-lg-2xl mx-2"></i>
-                <i className="fa-brands fa-square-reddit fa-2xl mx-2"></i>
+                <a href="https://www.instagram.com/"><i className="fa-brands fa-square-instagram fa-2xl me-2"></i></a>
+                <a href="https://twitter.com/?lang=en"><i className="fa-brands fa-square-x-twitter fa-2xl mx-2"></i></a>
+                <a href="https://www.tumblr.com/"><i className="fa-brands fa-tumblr fa-lg fa-lg-2xl mx-2"></i></a>
+                <a href="https://www.reddit.com/"><i className="fa-brands fa-square-reddit fa-2xl mx-2"></i></a>
               </Col>
               <Col className="d-flex justify-content-end ">
                 <Button className="button"  onClick={() => {
